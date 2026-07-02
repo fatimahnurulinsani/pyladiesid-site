@@ -6,30 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyladies Indonesia</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+	<link rel="stylesheet" href="{% static 'css/sections/hero.css' %}">
+	{% block css %}{% endblock %}
 </head>
 <body>
-    <div class="container">
-        <!-- <img src="{% static 'my_app/example.jpg' %}" alt="My image"> -->
-        <nav class="navbar">
-  <ul>
-    <li class="nav-logo">
-      <a href="#">
-        <img src="{% static 'images/logo.png' %}" alt="My image">
-        <span class="logo-text">
-          <span class="text-pyladies">Pyladies</span> <span class="text-yellow">Indonesia</span>
-        </span>
-      </a>
-    </li>
-    <li class="nav-item"><a href="#">About Us</a></li>
-    <li class="nav-item"><a href="#">Program</a></li>
-    <li class="nav-item"><a href="#">Community</a></li>
-    <li class="nav-item"><a href="#">Chapter</a></li>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-logo">
+            <a href="#">
+              <img src="{% static 'images/logo.png' %}" alt="My image">
+              <span class="logo-text">
+                <span class="text-pyladies">Pyladies</span> <span class="text-yellow">Indonesia</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#about">About Us</a></li>
+          <li class="nav-item"><a href="#program">Program</a></li>
+          <li class="nav-item"><a href="#community">Community</a></li>
+          <li class="nav-item"><a href="#chapter">Chapter</a></li>
 
-    <li class="nav-button">
-      <a href="#" class="btn-join">Join Now &rarr;</a>
-    </li>
-  </ul>
-</nav>
-    </div>
+          <li class="nav-button">
+            <a href="#" class="primary-btn">Join Now &rarr;</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="home">
+          <!-- Hero -->
+		   {% include 'sites/sections/home.html' %}
+      </section>
+
+      <section id="about">
+          <!-- Tentang -->
+      </section>
+
+      <section id="program">
+          <!-- Program -->
+      </section>
+
+      <section id="community">
+          <!-- Komunitas -->
+      </section>
+
+      <section id="chapter">
+          <!-- Chapter -->
+      </section>
+
+    </main>
+
+    <footer>
+        <!-- Footer -->
+    </footer>
+
 </body>
 </html>

@@ -1,75 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #2D1218;
     background-image: url('../images/pattern2.png');
     background-repeat: repeat;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
-  position: relative;        /* Establishes positioning context for the background */
-  isolation: isolate;        /* Keeps the text on top of the negative z-index background */
-  width: 100%;
-  min-height: 400px;
-  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-/* .container::before {
-  content: "";
-  position: absolute;
-  inset: 0;                 
-  z-index: -1;              
-  background-image: url('../images/pattern2.png');
-  background-repeat: repeat; 
-} */
-
-/* .navbar {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #8B2635; 
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 0 1px #C82333;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 35px 20px; 
-  font-family: sans-serif; 
-}
-
-ul li a:hover {
-  background-color: #C82333;
-}
-
-ul li img {
-  width: 60px;
-  display: block;
-  margin-left: 20px;
-}
-
-img[alt="My image"] {
-  width: 60px;
-  height: 60px;
-  top: 24px;
-  left: 23px;
-  opacity: 1;
-  transform: rotate(0deg); 
-  
-  display: block;
-} */
 .navbar {
   margin: 0;
   padding: 0;
@@ -130,9 +77,23 @@ ul {
   opacity: 0.8;
 }
 
-.btn-join {
+.primary-btn {
   background-color: #C82333;
   color: #FFFFFF;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.default-btn {
+  background-color: #340E13;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 15px;
@@ -157,6 +118,10 @@ ul {
 
 .text-yellow {
   color: #C8943B; 
+}
+
+.text-red {
+  color: #C82333; 
 }
 
 .nav-logo a:hover {
