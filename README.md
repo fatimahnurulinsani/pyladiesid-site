@@ -24,7 +24,7 @@ The purpose of this project is to provide an online platform for the PyLadies In
 project/
 │── manage.py
 │── requirements.txt
-│── .env (optional)
+│── .env
 │── static/
 │── media/
 │── templates/
@@ -106,9 +106,9 @@ pip install -r requirements.txt
 
 ---
 
-### 6. Configure environment variables (if required)
+### 6. Configure environment variables
 
-If the project uses environment variables, create a `.env` file.
+Create a `.env` file.
 
 Example:
 
